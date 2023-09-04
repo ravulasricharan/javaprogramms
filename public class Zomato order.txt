@@ -1,0 +1,36 @@
+public class Zomato order
+{
+	public static void main(String[] args) {
+	    String product_Name="food";
+	    double quanityof_food=6;
+	    double product_cost=6000;
+	    double product_Discount=3;
+	    double disc=(3.0/100)*product_cost;
+	    System.out.println("3% of disc on product_cost="+disc);
+	    product_cost=(product_cost-disc);
+	    System.out.println("product_cost affter disc="+product_cost);
+	    double fornew_user=35;
+	    fornew_user=35.0/100*product_cost;
+	    System.out.println("35% off for product_cost fornew_user="+fornew_user);
+	    product_cost=product_cost-fornew_user;
+	    System.out.println("product_cost after disc="+product_cost);
+	    double extra_for_goldmember_subscriber=5;
+	    extra_for_goldmember_subscriber=5.0/100*product_cost;
+	    System.out.println("5% off for product_cost extra_for_goldmember_subscriber="+extra_for_goldmember_subscriber);
+	    product_cost=product_cost-extra_for_goldmember_subscriber;
+	    System.out.println("product_cost after disc="+product_cost);
+	    double pay_withcard=2;
+	    pay_withcard=2.0/100*product_cost;
+	    System.out.println("2% off for product_cost pay_withcard with card="+ pay_withcard);
+	    product_cost=product_cost-pay_withcard;
+	    System.out.println("product_cost after disc="+product_cost);
+	    double gst=40;
+	    product_cost=product_cost+gst;
+	    System.out.println("after adding gst product_cost="+product_cost);
+	    double delivery_cost=40;
+	    System.out.println("delivercost="+delivery_cost);
+	    double product_finalcost=delivery_cost+product_cost;
+	    System.out.println("product_finalcost="+product_finalcost);
+	    
+	}
+}

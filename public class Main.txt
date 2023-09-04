@@ -1,0 +1,20 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    double r=5,p=12,t=3;
+	    double a;
+	    double n=(1+(r/100));
+	    System.out.println(n);
+	    a=p*(Math.pow(n,t));
+		System.out.println(a);
+		double cl=a-p;
+		System.out.println("compound intrest="+cl);
+		double a1=8,b=6,c=12;
+		double value=Math.pow((b*b-4*a1*c),(1/2));
+		System.out.println("(b*b)-4ac)^2="+value);
+		double root_postive=(-b+value)/(2*a1);
+		double root_negative=(-b-value)/(2*a1);
+		System.out.println("root_postive="+root_postive);
+		System.out.println("root_negative="+root_negative);
+	}
+}
